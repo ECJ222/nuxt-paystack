@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.vue --no-error-on-unmatched-pattern . && prettier --write *.{js,vue} --no-error-on-unmatched-pattern .",
+    "prepare": "husky install",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"
   },
@@ -30,7 +31,6 @@
     "eslint": "latest",
     "husky": "^7.0.0",
     "jest": "latest",
-    "lint-staged": "^11.0.0",
     "nuxt-edge": "latest",
     "prettier": "^2.3.2",
     "standard-version": "latest"
