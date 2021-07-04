@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-paystack",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "ecj222 <enochchejieh@gmail.com>"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue --no-error-on-unmatched-pattern . && prettier --write *.{js,vue} --no-error-on-unmatched-pattern .",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint && jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "lint-staged": "^11.0.0",
+    "nuxt-edge": "latest",
+    "prettier": "^2.3.2",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
