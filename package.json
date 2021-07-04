@@ -19,6 +19,11 @@
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"
   },
+  "husky": {
+    "gitHooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "latest",
