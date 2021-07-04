@@ -20,7 +20,7 @@
     "test": "yarn lint && jest"
   },
   "husky": {
-    "gitHooks": {
+    "hooks": {
       "pre-commit": "lint-staged"
     }
   },
