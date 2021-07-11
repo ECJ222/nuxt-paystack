@@ -1,12 +1,12 @@
 {
   "name": "nuxt-paystack",
-  "version": "0.0.3",
-  "description": "",
-  "repository": "",
+  "version": "0.0.4",
+  "description": "Paystack module for Nuxt.js",
+  "repository": "ECJ222/nuxt-paystack",
   "license": "MIT",
   "contributors": [
     {
-      "name": "ecj222 <enochchejieh@gmail.com>"
+      "name": "ECJ222 <enochchejieh@gmail.com>"
     }
   ],
   "files": [
