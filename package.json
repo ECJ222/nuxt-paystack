@@ -1,6 +1,6 @@
 {
   "name": "nuxt-paystack",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "",
   "repository": "",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "lint": "eslint --ext .js,.vue --no-error-on-unmatched-pattern . && prettier --write *.{js,vue} --no-error-on-unmatched-pattern .",
     "prepare": "husky install",
     "release": "npm run test && standard-version && git push --follow-tags && npm publish",
-    "test": "npm run lint && jest"
+    "test": "npm run lint"
   },
   "dependencies": {},
   "devDependencies": {
