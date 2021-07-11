@@ -17,8 +17,8 @@
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.vue --no-error-on-unmatched-pattern . && prettier --write *.{js,vue} --no-error-on-unmatched-pattern .",
     "prepare": "husky install",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
+    "release": "npm run test && standard-version && git push --follow-tags && npm publish",
+    "test": "npm run lint && jest"
   },
   "dependencies": {},
   "devDependencies": {
