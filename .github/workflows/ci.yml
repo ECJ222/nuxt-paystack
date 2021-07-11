@@ -3,10 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - master
-  pull_request:
-    branches:
-      - master
+      - main
 
 jobs:
   ci:
@@ -18,28 +15,22 @@ jobs:
         node: [10, 12]
 
     steps:
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
 
       - name: checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       - name: cache node_modules
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn
+        run: npm install
 
       - name: Lint
-        run: yarn lint
-
-      - name: Test
-        run: yarn test
-
-      - name: Coverage
-        uses: codecov/codecov-action@v1
+        run: npm run lint
