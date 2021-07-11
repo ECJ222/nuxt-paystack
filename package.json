@@ -1,6 +1,6 @@
 {
   "name": "nuxt-paystack",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Paystack module for Nuxt.js",
   "repository": "ECJ222/nuxt-paystack",
   "license": "MIT",
