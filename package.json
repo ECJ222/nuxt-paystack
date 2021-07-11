@@ -12,7 +12,7 @@
   "files": [
     "lib"
   ],
-  "main": "lib/module.js",
+  "main": "lib/index.js",
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.vue --no-error-on-unmatched-pattern . && prettier --write *.{js,vue} --no-error-on-unmatched-pattern .",
