@@ -1,25 +1,23 @@
 <template>
-  <button @click="initializePaystack()">
-    Pay With Paystack
-  </button>
+  <button @click="initializePaystack()">Pay With Paystack</button>
 </template>
 
 <script>
 export default {
   name: 'Demo',
   methods: {
-    initializePaystack () {
+    initializePaystack() {
       this.$paystack({
         key: '', // Replace with your public key
         email: '',
         amount: 0,
-        ref: '' + Math.floor(Math.random() * 1000000000 + 1),
-        currency: 'NGN',
+        ref: '',
+        currency: '',
         callback: () => {
-          // what you want to do
+          // Do something.
         },
         onClose: () => {
-          // what you want to do.
+          // Do something.
         }
       })
     }

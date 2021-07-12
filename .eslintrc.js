@@ -4,5 +4,9 @@ module.exports = {
     parser: 'babel-eslint',
     sourceType: 'module'
   },
-  extends: ['@nuxtjs']
+  extends: ['@nuxtjs'],
+  rules: {
+    'space-before-function-paren': 0,
+    'vue/singleline-html-element-content-newline': 0
+  }
 }
