@@ -16,13 +16,6 @@
 </a>
 </p>
 
-[![code style: prettier][prettier-src]][prettier-href]
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
-
-> Paystack payment gateway integration for Nuxt.js
-
 ## Table of Contents
 
 - [✨ &nbsp;Requirements](#requirements)
