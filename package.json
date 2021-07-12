@@ -1,9 +1,17 @@
 {
   "name": "nuxt-paystack",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Paystack payment gateway integration for Nuxt.js",
   "repository": "ECJ222/nuxt-paystack",
   "license": "MIT",
+  "keywords": [
+    "nuxt",
+    "nuxtjs",
+    "nuxt-module",
+    "vue",
+    "payment",
+    "paystack"
+  ],
   "contributors": [
     {
       "name": "ECJ222 <enochchejieh@gmail.com>"
