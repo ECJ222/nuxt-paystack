@@ -9,11 +9,11 @@
 
 ## Table of Contents
 
-- [Requirements](#requirements)
-- [Install](#install)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [License](#license)
+- [✨ &nbsp;Requirements](#requirements)
+- [✨ &nbsp;Install](#install)
+- [✨ &nbsp;Getting Started](#getting-started)
+- [✨ &nbsp;Usage](#usage)
+- [📖 &nbsp;License](#license)
 
 ## Requirements
 
@@ -37,7 +37,7 @@ Add `'nuxt-paystack'` to the `modules` section of your `nuxt.config.js` file.
 
 ```js
 {
-  modules: ["nuxt-paystack"];
+  modules: ['nuxt-paystack']
 }
 ```
 
