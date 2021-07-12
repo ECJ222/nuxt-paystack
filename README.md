@@ -20,7 +20,6 @@
 
 - [✨ &nbsp;Requirements](#requirements)
 - [✨ &nbsp;Install](#install)
-- [✨ &nbsp;Getting Started](#getting-started)
 - [✨ &nbsp;Usage](#usage)
 - [📖 &nbsp;License](#license)
 
@@ -40,7 +39,7 @@ $ npm install nuxt-paystack
 $ yarn add nuxt-paystack
 ```
 
-## Getting Started
+## Usage
 
 Add `'nuxt-paystack'` to the `modules` section of your `nuxt.config.js` file.
 
@@ -50,10 +49,7 @@ Add `'nuxt-paystack'` to the `modules` section of your `nuxt.config.js` file.
 }
 ```
 
-## Usage
-
-1. Inject the module in your `nuxt.config.js` file. See [Getting Started](#getting-started).
-2. `this.$visibility` is now available in your components. **Note** that `$visibility` returns an `object` with two properties one is `isVisible` which we would use to check if a user is focused on a page or not, While the other `isSupported` is used to check if the browser supports the Page Visibility API.
+`this.$paystack` is now available and can be used in your components.
 
 ```js
 {
@@ -78,6 +74,8 @@ Add `'nuxt-paystack'` to the `modules` section of your `nuxt.config.js` file.
   ...
 }
 ```
+
+**Note:** that `$paystack` is a `function` which takes in an `object` as its argument with your paystack details in it, for more information on this you can check [here](https://paystack.com/docs/payments/accept-payments/#collect-customer-information).
 
 ## License
 
